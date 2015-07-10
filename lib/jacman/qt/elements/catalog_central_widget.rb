@@ -61,6 +61,19 @@ END_CATALOG_HELP
         'Manager du catalogue de Jacinthe'
       end
 
+      # @return [Array<String>] about_message
+      def about
+        [subtitle,
+         'Versions',
+         "   jacman-qtbase : #{JacintheManagement::BASE_VERSION}",
+         "   jacman-qt : #{JacintheManagement::VERSION}",
+         "   jacman-utils : #{JacintheManagement::Utils::VERSION}",
+         "   jacman-core : #{JacintheManagement::Core::VERSION}",
+         'S.M.F. 2011-2014',
+         "#{JacintheManagement::COPYRIGHT}", 'LICENCE M.I.T.'
+        ]
+      end
+
       # SLOT : show help MessageBox
       def help
         Qt::MessageBox.information(self,
