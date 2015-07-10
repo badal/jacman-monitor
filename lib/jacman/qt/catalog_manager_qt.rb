@@ -7,7 +7,6 @@
 # (c) Michel Demazure <michel@demazure.com>
 
 require_relative('version.rb')
-require_relative('base.rb')
 require_relative('elements/catalog_manager_elements.rb')
 require_relative('elements/catalog_central_widget.rb')
 

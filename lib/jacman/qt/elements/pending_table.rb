@@ -20,9 +20,9 @@ module JacintheManagement
 
     WAITING_TEXT =
         [
-            'Importation des Ventes en cours',
-            'ATTENDRE',
-            'Ne pas fermer la fenêtre'
+          'Importation des Ventes en cours',
+          'ATTENDRE',
+          'Ne pas fermer la fenêtre'
         ].join("\n")
 
     # showing a message box while a task is processed
@@ -47,11 +47,11 @@ module JacintheManagement
       # Headers for the table
       HEADERS =
           [
-              'Importation des ventes',
-              'Fichier ventes GESCOM',
-              'Ventes non importées',
-              'Fichiers clients non lus',
-              'Clients à exporter'
+            'Importation des ventes',
+            'Fichier ventes GESCOM',
+            'Ventes non importées',
+            'Fichiers clients non lus',
+            'Clients à exporter'
           ]
 
       # Build a new instance

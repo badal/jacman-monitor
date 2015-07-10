@@ -37,12 +37,12 @@ END_CATALOG_HELP
       # Build the layout
       def build_layout
         add_line_header(
-            'Catalogue : exportations depuis Gescom')
+          'Catalogue : exportations depuis Gescom')
         @layout.add_widget(CatalogTable.new)
         add_line
 
         add_line_header(
-            'Catalogue : compte-rendu des importations automatiques dans Jacinthe')
+          'Catalogue : compte-rendu des importations automatiques dans Jacinthe')
         @layout.add_widget(WatcherTable.new(CATALOG_COMMANDS))
         add_line
       end
