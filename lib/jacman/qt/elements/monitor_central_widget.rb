@@ -53,15 +53,7 @@ module JacintheManagement
 
       # @return [Array<String>] about_message
       def about
-        [subtitle,
-         'Versions',
-         "   jacman-qtbase : #{JacintheManagement::BASE_VERSION}",
-         "   jacman-qt : #{JacintheManagement::VERSION}",
-         "   jacman-utils : #{JacintheManagement::Utils::VERSION}",
-         "   jacman-core : #{JacintheManagement::Core::VERSION}",
-         'S.M.F. 2011-2014',
-         "#{JacintheManagement::COPYRIGHT}", 'LICENCE M.I.T.'
-        ]
+        [subtitle] + JacintheManagement.versions
       end
 
       # add the gi! emergency button to the status line
