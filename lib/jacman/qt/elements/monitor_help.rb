@@ -86,14 +86,9 @@ END_CMD_HELP
         Qt::MessageBox.information(self, 'Les commandes', CMD_HELP)
       end
 
-      # HTML help file
-      HELP_FILE = File.expand_path('manager.html',
-                                   File.join(File.dirname(__FILE__), '../../../..', 'help'))
-
       # SLOT : show help MessageBox for manager
       def help
-        #  qt::MessageBox.information(self, 'le Manageur de Jacinthe', MONITOR_HELP)
-        Utils.open_file(HELP_FILE)
+        Qt::MessageBox.information(self, 'le Manageur de Jacinthe', MONITOR_HELP)
       end
     end
   end
